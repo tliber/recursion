@@ -3,12 +3,9 @@
 
 // but you don't so you're going to write it from scratch:
 var gosha = {"a": "apple"};
-// console.log(gosha);
-// console.log(typeof gosha);
 var stringifyJSON = function(obj) {
   var sFyed = '';
   var obj = obj;
-  // console.log(sFyed);
   if (typeof(obj) === ('string')){
   	return sFyed.concat('"', obj, '"');
   };
@@ -19,10 +16,7 @@ var stringifyJSON = function(obj) {
 
    if ((typeof(obj) === 'function') || (typeof(obj) === 'undefined')) {
    	return false};
-  //have to make expection for array
-  // if (typeof(obj) === 'undefined'){
-  	// ;
-  // };
+
   if (Array.isArray(obj) === true){
   	sFyed = sFyed + ('[')
 	for (var i in obj){
@@ -61,11 +55,3 @@ var stringifyJSON = function(obj) {
   	
   	return sFyed;
 };
-// for (var g in gosha){
-	// console.log(toString(g));
-// }
-// console.log((stringifyJSON( {"foo": true, "bar": false, "baz": null})));
-// console.log((stringifyJSON( {})));
-// console.log(typeof null)
-// console.log((stringifyJSON([8])));
-// console.log(Object.keys(gosha).length)
