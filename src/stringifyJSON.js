@@ -2,7 +2,6 @@
 // var stringifyJSON = JSON.stringify;
 
 // but you don't so you're going to write it from scratch:
-var gosha = {"a": "apple"};
 var stringifyJSON = function(obj) {
   var sFyed = '';
   var obj = obj;
